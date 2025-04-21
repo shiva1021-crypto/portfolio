@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant - Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 2rem 0;
+            transition: all 0.3s;
+        }
+        .back-button:hover {
+            background: var(--dark);
+            transform: translateY(-2px);
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tech-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .fade-in.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="project-details fade-in">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        
+        <div class="project-header">
+            <h1>AI Voice Assistant</h1>
+            <p class="subtitle">A JARVIS-Inspired Personal Assistant</p>
+        </div>
+
+        <img src="../ai assistent.jpeg" alt="AI Voice Assistant" class="project-image">
+
+        <div class="project-content">
+            <h2>Project Overview</h2>
+            <p>An advanced AI-powered voice assistant that brings the concept of Iron Man's JARVIS to life. This intelligent system processes natural language commands, performs complex tasks, and responds with human-like voice interactions.</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-microphone"></i> Voice Recognition</h3>
+                    <p>Advanced speech-to-text processing for accurate command interpretation</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-brain"></i> AI Processing</h3>
+                    <p>Integration with Wolfram Alpha for complex queries and calculations</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-volume-up"></i> Natural Response</h3>
+                    <p>Text-to-speech capability for natural, human-like interactions</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-cogs"></i> System Control</h3>
+                    <p>Ability to control computer functions and applications</p>
+                </div>
+            </div>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-list">
+                <span class="tech-item"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-item"><i class="fas fa-microphone"></i> Speech Recognition</span>
+                <span class="tech-item"><i class="fas fa-brain"></i> Natural Language Processing</span>
+                <span class="tech-item"><i class="fas fa-robot"></i> Wolfram Alpha API</span>
+                <span class="tech-item"><i class="fas fa-volume-up"></i> Text-to-Speech</span>
+            </div>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Real-time voice command processing</li>
+                <li>Intelligent context understanding</li>
+                <li>Integration with multiple APIs for enhanced functionality</li>
+                <li>Customizable command sets</li>
+                <li>System resource monitoring and management</li>
+            </ul>
+
+            <h2>Technical Implementation</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Speech Recognition</h3>
+                    <p>Uses Python's speech_recognition library with noise reduction algorithms for accurate command capture</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Natural Language Processing</h3>
+                    <p>Implements NLTK and custom NLP algorithms for understanding user intent</p>
+                </div>
+                <div class="feature-item">
+                    <h3>API Integration</h3>
+                    <p>Seamless integration with Wolfram Alpha and other APIs for enhanced functionality</p>
+                </div>
+            </div>
+
+            <h2>Future Enhancements</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-chart-line"></i> Advanced AI</h3>
+                    <p>Integration with more advanced AI models for better understanding</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile App</h3>
+                    <p>Development of a companion mobile application</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-home"></i> Smart Home</h3>
+                    <p>Integration with smart home devices and IoT systems</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script>
+        // Add fade-in animation to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-item, .tech-item').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

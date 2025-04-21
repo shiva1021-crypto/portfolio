@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Driving Car Simulation - Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #00a8ff;
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 2rem 0;
+            transition: all 0.3s;
+        }
+        .back-button:hover {
+            background: #0097e6;
+            transform: translateY(-2px);
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tech-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .fade-in.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="project-details fade-in">
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        
+        <div class="project-header">
+            <h1>Self Driving Car Simulation</h1>
+            <p class="subtitle">Neural Network-Based Autonomous Vehicle System</p>
+        </div>
+
+        <img src="../selfDrivingCar.jpeg" alt="Self Driving Car Simulation" class="project-image">
+
+        <div class="project-content">
+            <h2>Project Overview</h2>
+            <p>An advanced simulation environment that demonstrates the principles of autonomous driving using neural networks and computer vision. The system learns to navigate through complex scenarios while avoiding obstacles and following traffic rules.</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-car"></i> Real-time Simulation</h3>
+                    <p>Dynamic environment with realistic physics and vehicle behavior</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-brain"></i> Neural Network</h3>
+                    <p>Multi-layer neural network for decision making and path planning</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-eye"></i> Computer Vision</h3>
+                    <p>Advanced sensor simulation for environment perception</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-road"></i> Path Planning</h3>
+                    <p>Intelligent route calculation and obstacle avoidance</p>
+                </div>
+            </div>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-list">
+                <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-item"><i class="fas fa-brain"></i> Neural Networks</span>
+                <span class="tech-item"><i class="fab fa-html5"></i> HTML Canvas</span>
+                <span class="tech-item"><i class="fas fa-code"></i> Machine Learning</span>
+                <span class="tech-item"><i class="fas fa-eye"></i> Computer Vision</span>
+            </div>
+
+            <h2>Key Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-sensor"></i> Sensor System</h3>
+                    <p>Ray-casting algorithms to simulate LIDAR and proximity sensors</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-chart-line"></i> Learning Algorithm</h3>
+                    <p>Genetic algorithm for efficient training and behavior optimization</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-tachometer-alt"></i> Performance</h3>
+                    <p>Optimized rendering and computation for smooth 60 FPS operation</p>
+                </div>
+            </div>
+
+            <h2>Technical Implementation</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Neural Network Architecture</h3>
+                    <p>Multi-layer perceptron with customizable topology for optimal decision making</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Physics Engine</h3>
+                    <p>Custom-built physics system for realistic vehicle dynamics</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Visualization</h3>
+                    <p>HTML5 Canvas-based rendering with debug overlays for network visualization</p>
+                </div>
+            </div>
+
+            <h2>Future Enhancements</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-traffic-light"></i> Traffic System</h3>
+                    <p>Implementation of multiple vehicles and traffic scenarios</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-cloud-rain"></i> Weather Effects</h3>
+                    <p>Simulation of various weather conditions affecting vehicle behavior</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-graduation-cap"></i> Advanced Learning</h3>
+                    <p>Integration with reinforcement learning for improved performance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+    <script>
+        // Add fade-in animation to elements as they scroll into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-item, .tech-item').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>

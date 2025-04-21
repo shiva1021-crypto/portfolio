@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric Voting System - Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Add project-specific styles -->
+    <style>
+        .project-details {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .project-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #00a8ff;
+            color: var(--light);
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 2rem 0;
+            transition: all 0.3s;
+        }
+        .back-button:hover {
+            background: #0097e6;
+            transform: translateY(-2px);
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tech-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-details">
+        <a href="../index.html" class="back-button">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>Biometric Voting System</h1>
+            <p class="subtitle">Secure and Accessible Digital Voting Platform</p>
+        </div>
+
+        <img src="../biometricVotingSystem.jpeg" alt="Biometric Voting System" class="project-image">
+
+        <div class="project-content">
+            <h2>Project Overview</h2>
+            <p>The Biometric Voting System revolutionizes the electoral process by implementing cutting-edge facial recognition technology for voter verification. This system enables secure, accessible voting from any designated polling station while maintaining the integrity and privacy of the electoral process.</p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Webcam-based facial recognition for voter authentication</li>
+                <li>Secure digital ballot system</li>
+                <li>Real-time voter verification</li>
+                <li>Encrypted vote transmission</li>
+                <li>Centralized vote counting and result tabulation</li>
+                <li>Anti-fraud measures and audit trails</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-list">
+                <span class="tech-item">Python</span>
+                <span class="tech-item">Facial Recognition</span>
+                <span class="tech-item">OpenCV</span>
+                <span class="tech-item">Database Management</span>
+                <span class="tech-item">Encryption</span>
+                <span class="tech-item">Webcam Integration</span>
+            </div>
+
+            <h2>System Architecture</h2>
+            <p>The system is built on a three-tier architecture:</p>
+            <ul>
+                <li><strong>Client Layer:</strong> Polling station interface with webcam integration and voter interaction</li>
+                <li><strong>Application Layer:</strong> Facial recognition processing, vote encryption, and authentication logic</li>
+                <li><strong>Database Layer:</strong> Secure storage of voter records and encrypted votes</li>
+            </ul>
+
+            <h2>Security Measures</h2>
+            <ul>
+                <li>End-to-end encryption of voter data and ballots</li>
+                <li>Multi-factor authentication system</li>
+                <li>Secure socket layer (SSL) communication</li>
+                <li>Audit logging and vote verification</li>
+                <li>Prevention of double voting through real-time database updates</li>
+            </ul>
+
+            <h2>Impact and Benefits</h2>
+            <ul>
+                <li>Increased voter turnout through improved accessibility</li>
+                <li>Reduced electoral fraud through biometric verification</li>
+                <li>Faster vote counting and result declaration</li>
+                <li>Cost-effective compared to traditional voting methods</li>
+                <li>Environmental benefits through paperless voting</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+</html>
